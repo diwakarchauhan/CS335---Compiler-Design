@@ -1,0 +1,20 @@
+Language of choice: C
+
+Compulsory:
+Import of modules// (  MODULE pqr;
+                    FROM module IMPORT
+                     abc, xyz;)
+Loops
+Indentifiers        //letter (letter+digits)*
+
+Function calls       //function(argument)
+Recursive functions
+Arithmetic ops(Integers)
+Logical ops
+
+
+Optional:
+LOOP loop
+Float operations
+
+Next Meeting: Lexer complete, Parser start.
