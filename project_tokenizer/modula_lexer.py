@@ -2,7 +2,7 @@
 #modula_lexer1.1.py
 #has to be run like this :
 
-#   $python modula_lexer1.1.py directory/
+#   $python modula_lexer1.1.py directory
 
 #	This commands takes all the files in 
 #	the test directory and executes the 
@@ -169,7 +169,7 @@ listing = os.listdir(directory)
 SymbolTable = {}
 for filename in listing:
 	print filename,"*******************************************"
-	filename = filename 
+	filename = directory +'/'+ filename 
 	a = open(filename,"r")
 	p = a.read()
 	data = p
@@ -180,7 +180,7 @@ for filename in listing:
 			lexer.lineno = 1
 			break      # No more input
 		SymbolTable[tok.value] = [tok.type, tok.value, tok.lineno, tok.lexpos]
-		print tok
+	#	print tok
 	a.close()
 
 print SymbolTable
